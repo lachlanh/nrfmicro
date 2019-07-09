@@ -49,7 +49,7 @@ U 1 1 5B158495
 P 1400 6850
 F 0 "D1" H 1400 6634 50  0000 C CNN
 F 1 "1N5819" H 1400 6725 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" H 1400 6675 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323F" H 1400 6675 50  0001 C CNN
 F 3 "" H 1400 6850 50  0001 C CNN
 	1    1400 6850
 	-1   0    0    1   
@@ -536,30 +536,6 @@ Text Label 1650 2050 2    60   ~ 0
 P0.00
 Text Label 1650 2250 2    60   ~ 0
 P0.01
-Wire Wire Line
-	10100 1400 10100 1500
-Wire Wire Line
-	10100 1600 10100 1700
-Text GLabel 10100 900  2    60   Input ~ 0
-VBUS
-Text GLabel 10100 1650 2    60   Input ~ 0
-DATA+
-Text GLabel 10100 1450 2    60   Input ~ 0
-DATA-
-NoConn ~ 10100 2000
-NoConn ~ 10100 2100
-NoConn ~ 9200 2400
-$Comp
-L nrfmicro-rescue:GND #PWR0101
-U 1 1 5C755B16
-P 9500 2400
-F 0 "#PWR0101" H 9500 2150 50  0001 C CNN
-F 1 "GND" H 9500 2250 50  0000 C CNN
-F 2 "" H 9500 2400 50  0001 C CNN
-F 3 "" H 9500 2400 50  0001 C CNN
-	1    9500 2400
-	0    -1   -1   0   
-$EndComp
 $Comp
 L nrfmicro-rescue:ProMicro U2
 U 1 1 5AC0283B
@@ -583,483 +559,40 @@ Wire Wire Line
 	1650 2350 1000 2350
 Wire Wire Line
 	1650 2550 1000 2550
-$Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 5C7CC652
-P 8750 2950
-F 0 "JP1" H 8750 3155 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 8750 3064 50  0000 C CNN
-F 2 "nrfmicro:jumper" H 8750 2950 50  0001 C CNN
-F 3 "~" H 8750 2950 50  0001 C CNN
-	1    8750 2950
-	1    0    0    -1  
-$EndComp
-Text Label 6350 900  0    60   ~ 0
+Text Label 7350 1350 0    60   ~ 0
 S5
-Text Label 6350 1000 0    60   ~ 0
+Text Label 7350 1450 0    60   ~ 0
 S6
-Text Label 5350 900  2    60   ~ 0
-S1
-Text Label 5350 1000 2    60   ~ 0
-S2
-Text Label 5350 1100 2    60   ~ 0
-S3
-Text Label 5350 1200 2    60   ~ 0
-S4
-Text Label 6350 1200 0    60   ~ 0
+Text Label 7350 1650 0    60   ~ 0
 S8
-Text Label 6350 1100 0    60   ~ 0
+Text Label 7350 1550 0    60   ~ 0
 S7
-Text Label 8900 2950 0    60   ~ 0
-S1
-Text GLabel 8600 2950 0    60   Input ~ 0
-TXD
-$Comp
-L Jumper:SolderJumper_2_Open JP2
-U 1 1 5C7D76E3
-P 8750 3300
-F 0 "JP2" H 8750 3505 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 8750 3414 50  0000 C CNN
-F 2 "nrfmicro:jumper" H 8750 3300 50  0001 C CNN
-F 3 "~" H 8750 3300 50  0001 C CNN
-	1    8750 3300
-	1    0    0    -1  
-$EndComp
-Text Label 8900 3300 0    60   ~ 0
-S2
-Text GLabel 8600 3300 0    60   Input ~ 0
-RXD
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 5C7D8FF4
-P 8750 3650
-F 0 "JP3" H 8750 3855 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 8750 3764 50  0000 C CNN
-F 2 "nrfmicro:jumper" H 8750 3650 50  0001 C CNN
-F 3 "~" H 8750 3650 50  0001 C CNN
-	1    8750 3650
-	1    0    0    -1  
-$EndComp
-Text Label 8900 3650 0    60   ~ 0
-S3
-$Comp
-L nrfmicro-rescue:GND #PWR0105
-U 1 1 5C7DC16D
-P 8600 3650
-F 0 "#PWR0105" H 8600 3400 50  0001 C CNN
-F 1 "GND" H 8600 3500 50  0000 C CNN
-F 2 "" H 8600 3650 50  0001 C CNN
-F 3 "" H 8600 3650 50  0001 C CNN
-	1    8600 3650
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 5C7DDA39
-P 8750 4000
-F 0 "JP4" H 8750 4205 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 8750 4114 50  0000 C CNN
-F 2 "nrfmicro:jumper" H 8750 4000 50  0001 C CNN
-F 3 "~" H 8750 4000 50  0001 C CNN
-	1    8750 4000
-	1    0    0    -1  
-$EndComp
-Text Label 8900 4000 0    60   ~ 0
-S4
-$Comp
-L nrfmicro-rescue:GND #PWR0110
-U 1 1 5C7DDA41
-P 8600 4000
-F 0 "#PWR0110" H 8600 3750 50  0001 C CNN
-F 1 "GND" H 8600 3850 50  0000 C CNN
-F 2 "" H 8600 4000 50  0001 C CNN
-F 3 "" H 8600 4000 50  0001 C CNN
-	1    8600 4000
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP9
-U 1 1 5C7E6EA8
-P 9650 2950
-F 0 "JP9" H 9650 2725 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 9650 2816 50  0000 C CNN
-F 2 "nrfmicro:jumper" H 9650 2950 50  0001 C CNN
-F 3 "~" H 9650 2950 50  0001 C CNN
-	1    9650 2950
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP10
-U 1 1 5C7E6EAF
-P 9650 3300
-F 0 "JP10" H 9650 3075 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 9650 3166 50  0000 C CNN
-F 2 "nrfmicro:jumper" H 9650 3300 50  0001 C CNN
-F 3 "~" H 9650 3300 50  0001 C CNN
-	1    9650 3300
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP11
-U 1 1 5C7E6EB6
-P 9650 3650
-F 0 "JP11" H 9650 3425 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 9650 3516 50  0000 C CNN
-F 2 "nrfmicro:jumper" H 9650 3650 50  0001 C CNN
-F 3 "~" H 9650 3650 50  0001 C CNN
-	1    9650 3650
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP12
-U 1 1 5C7E6EBD
-P 9650 4000
-F 0 "JP12" H 9650 3775 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 9650 3866 50  0000 C CNN
-F 2 "nrfmicro:jumper" H 9650 4000 50  0001 C CNN
-F 3 "~" H 9650 4000 50  0001 C CNN
-	1    9650 4000
-	-1   0    0    1   
-$EndComp
-Text Label 9500 2950 2    60   ~ 0
-S5
-Text Label 9500 3300 2    60   ~ 0
-S6
-Text Label 9500 3650 2    60   ~ 0
-S7
-Text Label 9500 4000 2    60   ~ 0
-S8
-Text GLabel 9800 2950 2    60   Input ~ 0
-VBAT
 $Comp
 L nrfmicro-rescue:GND #PWR0111
 U 1 1 5C7EA1CF
-P 9800 3300
-F 0 "#PWR0111" H 9800 3050 50  0001 C CNN
-F 1 "GND" H 9800 3150 50  0000 C CNN
-F 2 "" H 9800 3300 50  0001 C CNN
-F 3 "" H 9800 3300 50  0001 C CNN
-	1    9800 3300
+P 6350 1000
+F 0 "#PWR0111" H 6350 750 50  0001 C CNN
+F 1 "GND" H 6350 850 50  0000 C CNN
+F 2 "" H 6350 1000 50  0001 C CNN
+F 3 "" H 6350 1000 50  0001 C CNN
+	1    6350 1000
 	0    -1   -1   0   
 $EndComp
-Text GLabel 9800 3650 2    60   Input ~ 0
+Text GLabel 6675 1100 2    60   Input ~ 0
 RESET
 $Comp
 L nrfmicro-rescue:VCC #PWR0112
 U 1 1 5C7F1D3A
-P 9800 4000
-F 0 "#PWR0112" H 9800 3850 50  0001 C CNN
-F 1 "VCC" H 9800 4150 50  0000 C CNN
-F 2 "" H 9800 4000 50  0001 C CNN
-F 3 "" H 9800 4000 50  0001 C CNN
-	1    9800 4000
+P 7025 1200
+F 0 "#PWR0112" H 7025 1050 50  0001 C CNN
+F 1 "VCC" H 7025 1350 50  0000 C CNN
+F 2 "" H 7025 1200 50  0001 C CNN
+F 3 "" H 7025 1200 50  0001 C CNN
+	1    7025 1200
 	0    1    1    0   
 $EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP5
-U 1 1 5C804770
-P 8750 4600
-F 0 "JP5" H 8750 4805 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 8750 4714 50  0000 C CNN
-F 2 "nrfmicro:jumper" H 8750 4600 50  0001 C CNN
-F 3 "~" H 8750 4600 50  0001 C CNN
-	1    8750 4600
-	1    0    0    -1  
-$EndComp
-Text Label 8900 4600 0    60   ~ 0
-S1
-Text GLabel 9800 4600 2    60   Input ~ 0
-TXD
-$Comp
-L Jumper:SolderJumper_2_Open JP6
-U 1 1 5C804779
-P 8750 4950
-F 0 "JP6" H 8750 5155 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 8750 5064 50  0000 C CNN
-F 2 "nrfmicro:jumper" H 8750 4950 50  0001 C CNN
-F 3 "~" H 8750 4950 50  0001 C CNN
-	1    8750 4950
-	1    0    0    -1  
-$EndComp
-Text Label 8900 4950 0    60   ~ 0
-S2
-Text GLabel 9800 4950 2    60   Input ~ 0
-RXD
-$Comp
-L Jumper:SolderJumper_2_Open JP7
-U 1 1 5C804782
-P 8750 5300
-F 0 "JP7" H 8750 5505 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 8750 5414 50  0000 C CNN
-F 2 "nrfmicro:jumper" H 8750 5300 50  0001 C CNN
-F 3 "~" H 8750 5300 50  0001 C CNN
-	1    8750 5300
-	1    0    0    -1  
-$EndComp
-Text Label 8900 5300 0    60   ~ 0
-S3
-$Comp
-L nrfmicro-rescue:GND #PWR0113
-U 1 1 5C80478A
-P 9800 5300
-F 0 "#PWR0113" H 9800 5050 50  0001 C CNN
-F 1 "GND" H 9800 5150 50  0000 C CNN
-F 2 "" H 9800 5300 50  0001 C CNN
-F 3 "" H 9800 5300 50  0001 C CNN
-	1    9800 5300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP8
-U 1 1 5C804790
-P 8750 5650
-F 0 "JP8" H 8750 5855 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 8750 5764 50  0000 C CNN
-F 2 "nrfmicro:jumper" H 8750 5650 50  0001 C CNN
-F 3 "~" H 8750 5650 50  0001 C CNN
-	1    8750 5650
-	1    0    0    -1  
-$EndComp
-Text Label 8900 5650 0    60   ~ 0
-S4
-$Comp
-L nrfmicro-rescue:GND #PWR0114
-U 1 1 5C804798
-P 9800 5650
-F 0 "#PWR0114" H 9800 5400 50  0001 C CNN
-F 1 "GND" H 9800 5500 50  0000 C CNN
-F 2 "" H 9800 5650 50  0001 C CNN
-F 3 "" H 9800 5650 50  0001 C CNN
-	1    9800 5650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP13
-U 1 1 5C80479E
-P 9650 4600
-F 0 "JP13" H 9650 4375 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 9650 4466 50  0000 C CNN
-F 2 "nrfmicro:jumper" H 9650 4600 50  0001 C CNN
-F 3 "~" H 9650 4600 50  0001 C CNN
-	1    9650 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP14
-U 1 1 5C8047A5
-P 9650 4950
-F 0 "JP14" H 9650 4725 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 9650 4816 50  0000 C CNN
-F 2 "nrfmicro:jumper" H 9650 4950 50  0001 C CNN
-F 3 "~" H 9650 4950 50  0001 C CNN
-	1    9650 4950
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP15
-U 1 1 5C8047AC
-P 9650 5300
-F 0 "JP15" H 9650 5075 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 9650 5166 50  0000 C CNN
-F 2 "nrfmicro:jumper" H 9650 5300 50  0001 C CNN
-F 3 "~" H 9650 5300 50  0001 C CNN
-	1    9650 5300
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP16
-U 1 1 5C8047B3
-P 9650 5650
-F 0 "JP16" H 9650 5425 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 9650 5516 50  0000 C CNN
-F 2 "nrfmicro:jumper" H 9650 5650 50  0001 C CNN
-F 3 "~" H 9650 5650 50  0001 C CNN
-	1    9650 5650
-	-1   0    0    1   
-$EndComp
-Text Label 9500 4600 2    60   ~ 0
-S5
-Text Label 9500 4950 2    60   ~ 0
-S6
-Text Label 9500 5300 2    60   ~ 0
-S7
-Text Label 9500 5650 2    60   ~ 0
-S8
-Text GLabel 8600 4600 0    60   Input ~ 0
+Text GLabel 2350 6300 2    60   Input ~ 0
 VBAT
-$Comp
-L nrfmicro-rescue:GND #PWR0115
-U 1 1 5C8047BF
-P 8600 4950
-F 0 "#PWR0115" H 8600 4700 50  0001 C CNN
-F 1 "GND" H 8600 4800 50  0000 C CNN
-F 2 "" H 8600 4950 50  0001 C CNN
-F 3 "" H 8600 4950 50  0001 C CNN
-	1    8600 4950
-	0    1    1    0   
-$EndComp
-Text GLabel 8600 5300 0    60   Input ~ 0
-RESET
-$Comp
-L nrfmicro-rescue:VCC #PWR0116
-U 1 1 5C8047C6
-P 8600 5650
-F 0 "#PWR0116" H 8600 5500 50  0001 C CNN
-F 1 "VCC" H 8600 5800 50  0000 C CNN
-F 2 "" H 8600 5650 50  0001 C CNN
-F 3 "" H 8600 5650 50  0001 C CNN
-	1    8600 5650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 5CAA680B
-P 10750 1100
-F 0 "R4" V 10957 1100 50  0000 C CNN
-F 1 "5.1K" V 10866 1100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 10680 1100 50  0001 C CNN
-F 3 "~" H 10750 1100 50  0001 C CNN
-	1    10750 1100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:USB_C_Receptacle_USB2.0 J2
-U 1 1 5C743564
-P 9500 1500
-F 0 "J2" H 9605 2367 50  0000 C CNN
-F 1 "USB-C USB 2.0 MC-372" H 9605 2276 50  0000 C CNN
-F 2 "nrfmicro:usb_type_c" H 9650 1500 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 9650 1500 50  0001 C CNN
-	1    9500 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5CAA879F
-P 10750 1200
-F 0 "R5" V 10635 1200 50  0000 C CNN
-F 1 "5.1K" V 10544 1200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 10680 1200 50  0001 C CNN
-F 3 "~" H 10750 1200 50  0001 C CNN
-	1    10750 1200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10100 1100 10600 1100
-Wire Wire Line
-	10900 1100 10900 1200
-Connection ~ 10900 1200
-Wire Wire Line
-	10900 1200 10900 1900
-$Comp
-L nrfmicro-rescue:GND #PWR0118
-U 1 1 5CABCE7D
-P 10900 1900
-F 0 "#PWR0118" H 10900 1650 50  0001 C CNN
-F 1 "GND" H 10900 1750 50  0000 C CNN
-F 2 "" H 10900 1900 50  0001 C CNN
-F 3 "" H 10900 1900 50  0001 C CNN
-	1    10900 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 5050 1900 5050
-Text GLabel 2900 6200 2    60   Input ~ 0
-VBAT
-Wire Wire Line
-	10100 1200 10600 1200
-$Comp
-L Device:R R6
-U 1 1 5CB1AD7E
-P 1750 4150
-F 0 "R6" V 1957 4150 50  0000 C CNN
-F 1 "1K" V 1866 4150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1680 4150 50  0001 C CNN
-F 3 "~" H 1750 4150 50  0001 C CNN
-	1    1750 4150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0117
-U 1 1 5CB1CB5E
-P 1900 4150
-F 0 "#PWR0117" H 1900 3900 50  0001 C CNN
-F 1 "GND" H 1905 3977 50  0000 C CNN
-F 2 "" H 1900 4150 50  0001 C CNN
-F 3 "" H 1900 4150 50  0001 C CNN
-	1    1900 4150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D2
-U 1 1 5CB260DB
-P 1450 4150
-F 0 "D2" H 1443 3895 50  0000 C CNN
-F 1 "LED" H 1443 3986 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 1450 4150 50  0001 C CNN
-F 3 "~" H 1450 4150 50  0001 C CNN
-	1    1450 4150
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R7
-U 1 1 5CB11C9D
-P 1750 5050
-F 0 "R7" V 1957 5050 50  0000 C CNN
-F 1 "1K" V 1866 5050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1680 5050 50  0001 C CNN
-F 3 "~" H 1750 5050 50  0001 C CNN
-	1    1750 5050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D3
-U 1 1 5CB11CA9
-P 1450 5050
-F 0 "D3" H 1443 4795 50  0000 C CNN
-F 1 "LED" H 1443 4886 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 1450 5050 50  0001 C CNN
-F 3 "~" H 1450 5050 50  0001 C CNN
-	1    1450 5050
-	-1   0    0    1   
-$EndComp
-Text GLabel 1300 4150 0    60   Input ~ 0
-BLUE_LED
-Text GLabel 1400 6050 0    60   Input ~ 0
-P0.26
-$Comp
-L nrfmicro-rescue:R R8
-U 1 1 5CB84BCA
-P 1700 6050
-F 0 "R8" V 1815 6050 50  0000 C CNN
-F 1 "10K" V 1906 6050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 6050 50  0001 C CNN
-F 3 "" H 1700 6050 50  0001 C CNN
-	1    1700 6050
-	0    1    1    0   
-$EndComp
-$Comp
-L Switch:SW_SPDT SW1
-U 1 1 5C7B2101
-P 2550 6200
-F 0 "SW1" H 2550 6500 50  0000 C CNN
-F 1 "MSK-12C02" H 2550 6400 50  0000 C CNN
-F 2 "nrfmicro:switch_MSK-12C02_smd" H 2550 6200 50  0001 C CNN
-F 3 "" H 2550 6200 50  0001 C CNN
-	1    2550 6200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:Crystal Y1
-U 1 1 5CBCDF2E
-P 1050 2100
-F 0 "Y1" V 1096 2231 50  0000 L CNN
-F 1 "Crystal" V 1005 2231 50  0000 L CNN
-F 2 "Crystal:Crystal_Round_D1.0mm_Vertical" H 1050 2100 50  0001 C CNN
-F 3 "~" H 1050 2100 50  0001 C CNN
-	1    1050 2100
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1650 2250 1050 2250
 Wire Wire Line
@@ -1067,33 +600,7 @@ Wire Wire Line
 Wire Wire Line
 	1300 2050 1300 1950
 Wire Wire Line
-	1300 1950 1050 1950
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5CBAE12D
-P 8450 2100
-F 0 "J3" H 8530 2092 50  0000 L CNN
-F 1 "Conn_01x02" H 8530 2001 50  0000 L CNN
-F 2 "nrfmicro:connector_swd" H 8450 2100 50  0001 C CNN
-F 3 "~" H 8450 2100 50  0001 C CNN
-	1    8450 2100
-	1    0    0    -1  
-$EndComp
-Text GLabel 8250 2100 0    60   Input ~ 0
-SWD
-Text GLabel 8250 2200 0    60   Input ~ 0
-SWC
-Wire Wire Line
 	2000 6300 2350 6300
-Wire Wire Line
-	1400 6050 1550 6050
-Wire Wire Line
-	1850 6050 2000 6050
-Wire Wire Line
-	2000 6050 2000 6300
-Connection ~ 2000 6300
-Wire Wire Line
-	2750 6200 2900 6200
 Wire Wire Line
 	1050 6500 950  6500
 Connection ~ 1050 6500
@@ -1110,7 +617,45 @@ Wire Wire Line
 	2550 5450 1250 5450
 Wire Wire Line
 	1250 5450 1250 5050
-Connection ~ 1250 5050
+NoConn ~ 2150 5050
+Text GLabel 6675 900  2    60   Input ~ 0
+VBAT
 Wire Wire Line
-	1250 5050 1300 5050
+	6350 900  6675 900 
+Wire Wire Line
+	7025 1200 6350 1200
+Wire Wire Line
+	6350 1100 6675 1100
+Text GLabel 5350 900  0    60   Input ~ 0
+TXD
+Text GLabel 5350 1000 0    60   Input ~ 0
+RXD
+$Comp
+L nrfmicro-rescue:GND #PWR0101
+U 1 1 5D2811AC
+P 5100 1100
+F 0 "#PWR0101" H 5100 850 50  0001 C CNN
+F 1 "GND" H 5100 950 50  0000 C CNN
+F 2 "" H 5100 1100 50  0001 C CNN
+F 3 "" H 5100 1100 50  0001 C CNN
+	1    5100 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 1100 5100 1100
+$Comp
+L nrfmicro-rescue:GND #PWR0105
+U 1 1 5D2851CA
+P 4925 1200
+F 0 "#PWR0105" H 4925 950 50  0001 C CNN
+F 1 "GND" H 4925 1050 50  0000 C CNN
+F 2 "" H 4925 1200 50  0001 C CNN
+F 3 "" H 4925 1200 50  0001 C CNN
+	1    4925 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4925 1200 5350 1200
+NoConn ~ 1300 1950
+NoConn ~ 1050 2250
 $EndSCHEMATC
