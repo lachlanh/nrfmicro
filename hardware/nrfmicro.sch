@@ -591,7 +591,7 @@ F 3 "" H 7025 1200 50  0001 C CNN
 	1    7025 1200
 	0    1    1    0   
 $EndComp
-Text GLabel 2350 6300 2    60   Input ~ 0
+Text GLabel 2825 6200 2    60   Input ~ 0
 VBAT
 Wire Wire Line
 	1650 2250 1050 2250
@@ -599,8 +599,6 @@ Wire Wire Line
 	1650 2050 1300 2050
 Wire Wire Line
 	1300 2050 1300 1950
-Wire Wire Line
-	2000 6300 2350 6300
 Wire Wire Line
 	1050 6500 950  6500
 Connection ~ 1050 6500
@@ -658,4 +656,82 @@ Wire Wire Line
 	4925 1200 5350 1200
 NoConn ~ 1300 1950
 NoConn ~ 1050 2250
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5D255F9A
+P 2475 6200
+F 0 "SW1" H 2475 6500 50  0000 C CNN
+F 1 "MSK-12C02" H 2475 6400 50  0000 C CNN
+F 2 "nrfmicro:switch_MSK-12C02_smd" H 2475 6200 50  0001 C CNN
+F 3 "" H 2475 6200 50  0001 C CNN
+	1    2475 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2675 6200 2825 6200
+Wire Wire Line
+	2000 6300 2275 6300
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5D25E260
+P 5125 4700
+F 0 "J2" H 5205 4692 50  0000 L CNN
+F 1 "Conn_01x02" H 5205 4601 50  0000 L CNN
+F 2 "nrfmicro:connector_swd" H 5125 4700 50  0001 C CNN
+F 3 "~" H 5125 4700 50  0001 C CNN
+	1    5125 4700
+	1    0    0    -1  
+$EndComp
+Text GLabel 4925 4700 0    60   Input ~ 0
+VBAT
+$Comp
+L power:GND #PWR0113
+U 1 1 5D261774
+P 4925 4800
+F 0 "#PWR0113" H 4925 4550 50  0001 C CNN
+F 1 "GND" H 4930 4627 50  0000 C CNN
+F 2 "" H 4925 4800 50  0001 C CNN
+F 3 "" H 4925 4800 50  0001 C CNN
+	1    4925 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5D25D6D5
+P 5125 5175
+F 0 "J3" H 5205 5167 50  0000 L CNN
+F 1 "Conn_01x02" H 5205 5076 50  0000 L CNN
+F 2 "nrfmicro:connector_swd" H 5125 5175 50  0001 C CNN
+F 3 "~" H 5125 5175 50  0001 C CNN
+	1    5125 5175
+	1    0    0    -1  
+$EndComp
+Text GLabel 4925 5275 0    60   Input ~ 0
+SWC
+Text GLabel 4925 5175 0    60   Input ~ 0
+SWD
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5D279334
+P 6150 4675
+F 0 "J4" H 6230 4667 50  0000 L CNN
+F 1 "Conn_01x02" H 6230 4576 50  0000 L CNN
+F 2 "nrfmicro:JST_PH2_SMT_TH" H 6150 4675 50  0001 C CNN
+F 3 "~" H 6150 4675 50  0001 C CNN
+	1    6150 4675
+	1    0    0    -1  
+$EndComp
+Text GLabel 5950 4675 0    60   Input ~ 0
+VBAT
+$Comp
+L power:GND #PWR0110
+U 1 1 5D27C13B
+P 5950 4775
+F 0 "#PWR0110" H 5950 4525 50  0001 C CNN
+F 1 "GND" H 5955 4602 50  0000 C CNN
+F 2 "" H 5950 4775 50  0001 C CNN
+F 3 "" H 5950 4775 50  0001 C CNN
+	1    5950 4775
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
