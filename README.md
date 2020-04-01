@@ -1,5 +1,13 @@
 # nrfmicro
 
+local fork to split out the usb pads
+
+have included the jlcpcb bom, cfpl file in 'hardware/things'
+
+instructions on how to generate the files from kicad 
+
+https://support.jlcpcb.com/article/44-how-to-export-kicad-pcb-to-gerber-files
+
 Arduino Pro Micro-sized breakout board for E73-2G4M08S1C (nRF52840) modules
 
 ## Downloads
