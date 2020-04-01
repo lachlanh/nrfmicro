@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:nrfmicro-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -734,4 +734,19 @@ F 3 "" H 5950 4775 50  0001 C CNN
 	1    5950 4775
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5E84AC84
+P 5100 5650
+F 0 "J5" H 5180 5642 50  0000 L CNN
+F 1 "Conn_01x02" H 5180 5551 50  0000 L CNN
+F 2 "nrfmicro:connector_usbd" H 5100 5650 50  0001 C CNN
+F 3 "~" H 5100 5650 50  0001 C CNN
+	1    5100 5650
+	1    0    0    -1  
+$EndComp
+Text GLabel 4900 5650 0    60   Input ~ 0
+DATA+
+Text GLabel 4900 5750 0    60   Input ~ 0
+DATA-
 $EndSCHEMATC
